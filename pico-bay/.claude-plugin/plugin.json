@@ -1,0 +1,23 @@
+{
+  "name": "pico-bay",
+  "displayName": "Pico Bay",
+  "version": "0.9.40",
+  "description": "Work with Raspberry Pi Pico and ESP32 boards over USB: browse and edit files, run Python, install MicroPython and the ctrlPi API.",
+  "author": {
+    "name": "ctrlPi",
+    "url": "https://ctrlpi.com"
+  },
+  "homepage": "https://ctrlpi.com/pico-bay",
+  "repository": "https://github.com/ctrlpi/claude-plugins",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "keywords": [
+    "raspberry-pi-pico",
+    "esp32",
+    "micropython",
+    "circuitpython",
+    "usb",
+    "firmware",
+    "embedded"
+  ]
+}

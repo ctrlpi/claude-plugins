@@ -1,0 +1,28 @@
+{
+  "name": "ctrlpi",
+  "owner": {
+    "name": "ctrlPi",
+    "url": "https://ctrlpi.com"
+  },
+  "metadata": {
+    "description": "ctrlPi plugins: control Raspberry Pi, Pico and ESP32 boards from Claude.",
+    "version": "0.9.40"
+  },
+  "plugins": [
+    {
+      "name": "ctrlpi-mcp",
+      "source": "./ctrlpi-mcp",
+      "description": "Control Raspberry Pi, Pico W and ESP32 GPIO agents on your LAN: read and write pins, pulse relays, read sensors, manage scripts."
+    },
+    {
+      "name": "pico-bay",
+      "source": "./pico-bay",
+      "description": "Work with Raspberry Pi Pico and ESP32 boards over USB: files, Python, firmware install, ctrlPi API install."
+    },
+    {
+      "name": "pi-bay",
+      "source": "./pi-bay",
+      "description": "Work with Raspberry Pis and other SSH devices on your LAN: find them, edit files over SFTP, run commands, install the ctrlPi API."
+    }
+  ]
+}
