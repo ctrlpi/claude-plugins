@@ -1,7 +1,7 @@
 {
   "name": "pico-bay",
-  "displayName": "Pico Bay",
-  "version": "0.9.40",
+  "displayName": "Pico Bay - manage Pico and ESP32 boards over USB",
+  "version": "0.9.41",
   "description": "Work with Raspberry Pi Pico and ESP32 boards over USB: browse and edit files, run Python, install MicroPython and the ctrlPi API.",
   "author": {
     "name": "ctrlPi",

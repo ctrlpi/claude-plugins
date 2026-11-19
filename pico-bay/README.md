@@ -1,4 +1,4 @@
-# Pico Bay
+# Pico Bay - manage Pico and ESP32 boards over USB
 
 Work with Raspberry Pi Pico and ESP32 boards plugged into your computer over USB, from Claude. Ask Claude to list the boards, read and edit their files, run Python and show the output, reset a board, install MicroPython firmware, or turn a Pico W or ESP32 into a ctrlPi network agent.
 
@@ -13,7 +13,7 @@ The plugin starts the [pico-bay](https://github.com/ctrlpi/pico-bay) MCP server 
 
 ## Install
 
-In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **Pico Bay**.
+In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **Pico Bay - manage Pico and ESP32 boards over USB**.
 
 In Claude Code:
 
@@ -41,7 +41,7 @@ Then ask, for example: "What boards are connected?" or "Show me main.py on the P
 
 ## What it runs, sends and stores
 
-- **Runs:** `npx -y pico-bay@0.9.40 --mcp-stdio`, which downloads that exact version from the npm registry and starts it over stdio. The package has no dependencies.
+- **Runs:** `npx -y pico-bay@0.9.41 --mcp-stdio`, which downloads that exact version from the npm registry and starts it over stdio. The package has no dependencies.
 - **Serial helper:** to open USB serial ports, the server runs a small helper with the system's Perl or Python 3 on macOS and Linux. On Windows it compiles a small helper with the .NET Framework compiler that ships with Windows, and keeps it in the temp folder.
 - **Downloads:** MicroPython firmware from `micropython.org` when you install firmware, and the ctrlPi agent files from `raw.githubusercontent.com/ctrlpi` when you install the ctrlPi API.
 - **On the boards:** tools can write, rename and delete files, run any Python code, reset the board and replace its firmware. Installing the ctrlPi API writes your Wi-Fi name and password, and an optional API key, to the board.

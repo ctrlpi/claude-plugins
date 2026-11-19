@@ -2,7 +2,7 @@
   "mcpServers": {
     "ctrlpi-mcp": {
       "command": "npx",
-      "args": ["-y", "ctrlpi-mcp@0.9.40"]
+      "args": ["-y", "ctrlpi-mcp@0.9.41"]
     }
   }
 }

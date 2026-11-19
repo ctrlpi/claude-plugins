@@ -1,4 +1,4 @@
-# Pi Bay
+# Pi Bay - manage Raspberry Pi and SSH devices over LAN
 
 Work with the Raspberry Pis and other SSH devices on your local network, from Claude. Ask Claude to find the devices, show a device's hardware and system details, read and edit files in its home folder, run shell commands, reboot it, or install the ctrlPi API on a Pi.
 
@@ -12,7 +12,7 @@ The plugin starts the [pi-bay](https://github.com/ctrlpi/pi-bay) MCP server from
 
 ## Install
 
-In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **Pi Bay**.
+In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **Pi Bay - manage Raspberry Pi and SSH devices over LAN**.
 
 In Claude Code:
 
@@ -45,7 +45,7 @@ Only `pi_device_authenticate` takes a username and password. A password given to
 
 ## What it runs, sends and stores
 
-- **Runs:** `npx -y pi-bay@0.9.40 --mcp-stdio`, which downloads that exact version and its dependencies (`ssh2`, `ws`, `@xterm/xterm`) from the npm registry and starts it over stdio.
+- **Runs:** `npx -y pi-bay@0.9.41 --mcp-stdio`, which downloads that exact version and its dependencies (`ssh2`, `ws`, `@xterm/xterm`) from the npm registry and starts it over stdio.
 - **Local network:** a scan probes every address of your local /24 subnet for SSH (port 22) and a ctrlPi agent (port 8314), and reads the computer's ARP table and Bonjour names. All device work goes over SSH and SFTP.
 - **On the devices:** tools can write, rename and delete files in the home folder, run any shell command with the signed-in user's rights, and reboot the device. Installing the ctrlPi API on a Pi downloads its installer from `raw.githubusercontent.com/ctrlpi`.
 - **Stored on your computer:** saved devices (address, MAC, username, model) in `~/.ctrlpi/pi-bay-devices.json`, and saved passwords in the macOS Keychain or Linux Secret Service, under the service name `pi-bay`.

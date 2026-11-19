@@ -1,4 +1,4 @@
-# ctrlPi (control Raspberry Pi, Pico & ESP32)
+# ctrlPi - control Raspberry Pi, Pico and ESP32
 
 Control the GPIO pins of Raspberry Pi, Pico W and ESP32 boards on your local network from Claude. Ask in plain words to read a pin, switch an output, pulse a relay for a few seconds, read a sensor, or write and run a small script on a board.
 
@@ -12,7 +12,7 @@ The plugin starts the [ctrlpi-mcp](https://github.com/ctrlpi/ctrlpi-mcp) MCP ser
 
 ## Install
 
-In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **ctrlPi (control Raspberry Pi, Pico & ESP32)**.
+In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **ctrlPi - control Raspberry Pi, Pico and ESP32**.
 
 In Claude Code:
 
@@ -38,7 +38,7 @@ Then ask, for example: "List my ctrlPi agents" or "Pulse the relay on garage-pi 
 
 ## What it runs, sends and stores
 
-- **Runs:** `npx -y ctrlpi-mcp@0.9.40`, which downloads that exact version from the npm registry and starts it over stdio. The package has no dependencies.
+- **Runs:** `npx -y ctrlpi-mcp@0.9.41`, which downloads that exact version from the npm registry and starts it over stdio. The package has no dependencies.
 - **Local network:** at start and every hour, the server probes every address of your local /24 subnet on port 8314 to find agents. All tool calls are HTTP requests to your agents, with each agent's API key.
 - **On the boards:** tools can switch outputs, change pin and agent settings, write and run scripts, restart or reboot a board, and upgrade an agent. On upgrade, the agent downloads its own new release from GitHub.
 - **Stored on your computer:** the agent list and keys in `~/.ctrlpi/agents-config.json`.

@@ -3,7 +3,7 @@ name: ctrlpi-gpio
 description: Use when the user asks to read or switch GPIO pins, pulse a relay, read a sensor, or manage scripts on a Raspberry Pi, Pico W or ESP32 running a ctrlPi agent.
 ---
 
-# ctrlPi (control Raspberry Pi, Pico & ESP32)
+# ctrlPi - control Raspberry Pi, Pico and ESP32
 
 1. Start with `mcp_agents_list` to get the agent names. Use those names in every other call. If an agent the user names is missing or offline, say so and ask before calling `mcp_agents_list` with `rescan=true`.
 2. Before writing to a pin, read it or run `mcp_gpio_scan` so you know its type, name and current level. Only output pins can be written.

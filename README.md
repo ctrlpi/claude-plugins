@@ -1,11 +1,10 @@
 # ctrlPi plugins for Claude
 
 [![Platform: Claude Desktop | Claude Code](https://img.shields.io/badge/platform-Claude%20Desktop%20%7C%20Claude%20Code-006400.svg)](#install-in-claude-desktop)
-[![Version 0.9.40](https://img.shields.io/badge/version-0.9.40-blue.svg)](https://github.com/ctrlpi/claude-plugins/tags)
+[![Version 0.9.41](https://img.shields.io/badge/version-0.9.41-blue.svg)](https://github.com/ctrlpi/claude-plugins/tags)
 [![Node 20+](https://img.shields.io/badge/node-20%2B-blue.svg)](https://nodejs.org/)
 [![Plugins: 3](https://img.shields.io/badge/plugins-3-006400.svg)](#ctrlpi-plugins-for-claude)
 [![Agents: Pi, Pico & ESP32](https://img.shields.io/badge/agents-Pi%2C%20Pico%20%26%20ESP32-006400.svg)](#ctrlpi-plugins-for-claude)
-[![Protocol: MCP](https://img.shields.io/badge/protocol-MCP-006400.svg)](#ctrlpi-plugins-for-claude)
 [![License: MIT](https://img.shields.io/badge/license-MIT-188038.svg)](LICENSE)
 ![Status: Beta](https://img.shields.io/badge/status-Beta-red.svg)
 
@@ -23,10 +22,7 @@ The servers run on your computer and reach your boards over USB or your local ne
 
 Add this repository as a plugin marketplace once, then install the plugins you want from it.
 
-1. In Claude Desktop, open **Plugins** in the sidebar.
-2. Click **Add** and choose **Add marketplace**.
-3. Enter `ctrlpi/claude-plugins` (the GitHub repository) and confirm. The marketplace appears as `ctrlpi`.
-4. Open the `ctrlpi` marketplace and install `ctrlpi-mcp`, `pico-bay` or `pi-bay`.
+In Claude Desktop, open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`. The marketplace appears as `ctrlpi`; install `ctrlpi-mcp`, `pico-bay` or `pi-bay` from it.
 
 The Code tab also accepts the commands from the next section.
 

@@ -1,7 +1,7 @@
 {
   "name": "ctrlpi-mcp",
-  "displayName": "ctrlPi (control Raspberry Pi, Pico & ESP32)",
-  "version": "0.9.40",
+  "displayName": "ctrlPi - control Raspberry Pi, Pico and ESP32",
+  "version": "0.9.41",
   "description": "Control Raspberry Pi, Pico W and ESP32 GPIO agents on your LAN: read and write pins, pulse relays, read sensors, manage scripts.",
   "author": {
     "name": "ctrlPi",
