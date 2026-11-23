@@ -1,7 +1,7 @@
 {
   "name": "pi-bay",
   "displayName": "Pi Bay - manage Raspberry Pi and SSH devices over LAN",
-  "version": "0.9.41",
+  "version": "0.9.50",
   "description": "Work with Raspberry Pis and other SSH devices on your LAN: find them, browse and edit files over SFTP, run commands, install the ctrlPi API.",
   "author": {
     "name": "ctrlPi",
@@ -10,7 +10,7 @@
   "homepage": "https://ctrlpi.com/pi-bay",
   "repository": "https://github.com/ctrlpi/claude-plugins",
   "license": "MIT",
-  "icon": "assets/icon.png",
+  "icon": "./assets/icon.png",
   "keywords": [
     "raspberry-pi",
     "ssh",

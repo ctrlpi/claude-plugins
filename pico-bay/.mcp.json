@@ -2,7 +2,7 @@
   "mcpServers": {
     "pico-bay": {
       "command": "npx",
-      "args": ["-y", "pico-bay@0.9.41", "--mcp-stdio"]
+      "args": ["-y", "pico-bay@0.9.50", "--mcp", "stdio"]
     }
   }
 }

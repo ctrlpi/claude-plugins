@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pi-bay-remote": {
+      "command": "npx",
+      "args": ["-y", "ctrlpi-remote@0.9.50", "pi-bay"]
+    }
+  }
+}

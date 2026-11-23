@@ -12,7 +12,7 @@ The plugin starts the [pi-bay](https://github.com/ctrlpi/pi-bay) MCP server from
 
 ## Install
 
-In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install **Pi Bay - manage Raspberry Pi and SSH devices over LAN**.
+In Claude Desktop: open **Plugins** in the sidebar, choose **Add > Add marketplace** and enter `ctrlpi/claude-plugins`, then install `pi-bay`.
 
 In Claude Code:
 
@@ -45,12 +45,14 @@ Only `pi_device_authenticate` takes a username and password. A password given to
 
 ## What it runs, sends and stores
 
-- **Runs:** `npx -y pi-bay@0.9.41 --mcp-stdio`, which downloads that exact version and its dependencies (`ssh2`, `ws`, `@xterm/xterm`) from the npm registry and starts it over stdio.
+- **Runs:** `npx -y pi-bay@0.9.50 --mcp stdio`, which downloads that exact version and its dependencies (`ssh2`, `ws`, `@xterm/xterm`) from the npm registry and starts it over stdio.
 - **Local network:** a scan probes every address of your local /24 subnet for SSH (port 22) and a ctrlPi agent (port 8314), and reads the computer's ARP table and Bonjour names. All device work goes over SSH and SFTP.
 - **On the devices:** tools can write, rename and delete files in the home folder, run any shell command with the signed-in user's rights, and reboot the device. Installing the ctrlPi API on a Pi downloads its installer from `raw.githubusercontent.com/ctrlpi`.
 - **Stored on your computer:** saved devices (address, MAC, username, model) in `~/.ctrlpi/pi-bay-devices.json`, and saved passwords in the macOS Keychain or Linux Secret Service, under the service name `pi-bay`.
-- **Web app:** `pi_ui` starts a web server on `localhost` port 8383 and opens it in your browser. It stops when you ask.
+- **Web app:** `pi_ui` starts a web server on `localhost` port 3141 and opens it in your browser. It stops when you ask.
 - **Nothing else:** the server sends no data to ctrlPi or any other service, and has no telemetry.
+
+Claude may show "Can run code without asking" and "Can send data to other services" when you install this plugin, because it starts a local server. The list above is exactly what it runs, sends and stores.
 
 ## License
 

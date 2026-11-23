@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "ctrlPi plugins: control Raspberry Pi, Pico and ESP32 boards from Claude.",
-    "version": "0.9.41"
+    "version": "0.9.50"
   },
   "plugins": [
     {
@@ -23,6 +23,21 @@
       "name": "pi-bay",
       "source": "./pi-bay",
       "description": "Work with Raspberry Pis and other SSH devices on your LAN: find them, edit files over SFTP, run commands, install the ctrlPi API."
+    },
+    {
+      "name": "ctrlpi-mcp-remote",
+      "source": "./ctrlpi-mcp-remote",
+      "description": "Control GPIO agents through a ctrlpi-mcp running on a Raspberry Pi on your LAN: pins, relays, sensors, scripts. Use this or ctrlpi-mcp, not both."
+    },
+    {
+      "name": "pico-bay-remote",
+      "source": "./pico-bay-remote",
+      "description": "Work with the Pico and ESP32 boards plugged into a Raspberry Pi on your LAN, through pico-bay running there: files, Python, firmware, ctrlPi API."
+    },
+    {
+      "name": "pi-bay-remote",
+      "source": "./pi-bay-remote",
+      "description": "Work with Raspberry Pis and SSH devices through a pi-bay running on a Raspberry Pi on your LAN: files, commands, ctrlPi API. Use this or pi-bay, not both."
     }
   ]
 }

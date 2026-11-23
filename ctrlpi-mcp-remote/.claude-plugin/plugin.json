@@ -1,0 +1,24 @@
+{
+  "name": "ctrlpi-mcp-remote",
+  "displayName": "ctrlPi Remote - GPIO agents through ctrlpi-mcp on a Pi",
+  "version": "0.9.50",
+  "description": "Control GPIO agents through a ctrlpi-mcp running on a Raspberry Pi on your LAN: pins, relays, sensors, scripts. Use this or ctrlpi-mcp, not both.",
+  "author": {
+    "name": "ctrlPi",
+    "url": "https://ctrlpi.com"
+  },
+  "homepage": "https://ctrlpi.com/ctrlpi-mcp",
+  "repository": "https://github.com/ctrlpi/claude-plugins",
+  "license": "MIT",
+  "icon": "./assets/icon.png",
+  "keywords": [
+    "raspberry-pi",
+    "pico",
+    "esp32",
+    "gpio",
+    "relay",
+    "sensors",
+    "remote",
+    "home-automation"
+  ]
+}
