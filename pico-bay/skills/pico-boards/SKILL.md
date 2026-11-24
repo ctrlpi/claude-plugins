@@ -5,7 +5,7 @@ description: "Use when the user asks to work with a Raspberry Pi Pico or ESP32 b
 
 # Pico Bay boards
 
-1. Call `pico_boards_list` first and use its `board_id` in every other call. If several boards are connected, ask which one unless the user named it. These are the boards on this computer; boards plugged into a Pi need the pico-bay-remote plugin.
+1. Call `pico_boards_list` first and use its `board_id` in every other call. If several boards are connected, ask which one unless the user named it. These are the boards on this computer; boards plugged into a Pi need the ctrlpi-remote plugin.
 2. Read before you write: use `pico_files_list` and `pico_file_read` to see the current code, then `pico_file_write` with the whole new file.
 3. To test code, prefer `pico_python_run` with `path` for a file on the board, or `code` for a short snippet. A program still running at `timeout_ms` is interrupted; use `pico_board_interrupt` to stop one yourself.
 4. Writing `main.py` or `code.py` changes what the board runs at every start. Say so when you do it. On a board running the ctrlPi agent it replaces the agent: drive its pins with the ctrlpi-mcp tools instead.

@@ -1,0 +1,23 @@
+{
+  "name": "ctrlpi-remote",
+  "displayName": "ctrlPi Remote - ctrlpi-mcp, Pico Bay and Pi Bay on a Pi",
+  "version": "0.9.51",
+  "description": "Use the ctrlpi-mcp, pico-bay and pi-bay servers running on a Raspberry Pi on your LAN: GPIO agents, Pico and ESP32 boards, SSH devices. Finds them on your network.",
+  "author": {
+    "name": "ctrlPi",
+    "url": "https://ctrlpi.com"
+  },
+  "homepage": "https://github.com/ctrlpi/ctrlpi-remote",
+  "repository": "https://github.com/ctrlpi/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "raspberry-pi",
+    "pico",
+    "esp32",
+    "gpio",
+    "ssh",
+    "micropython",
+    "remote",
+    "home-automation"
+  ]
+}

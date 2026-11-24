@@ -1,6 +1,6 @@
 ---
 name: ctrlpi-gpio-remote
-description: Use when the user asks to read, switch or configure GPIO pins, pulse a relay, read a sensor, manage scripts, set a webhook, or restart, upgrade or read the log of ctrlPi agents reached through ctrlpi-mcp running on a Raspberry Pi (the ctrlpi-mcp-remote plugin).
+description: Use when the user asks to read, switch or configure GPIO pins, pulse a relay, read a sensor, manage scripts, set a webhook, or restart, upgrade or read the log of ctrlPi agents reached through ctrlpi-mcp running on a Raspberry Pi (the ctrlpi-remote plugin).
 ---
 
 # ctrlPi Remote - GPIO agents through a ctrlpi-mcp on a Pi
@@ -15,4 +15,4 @@ These tools reach the agents through a `ctrlpi-mcp` running on another machine. 
 6. Check `write` in `mcp_script_list` before writing a script. Writes are refused while the agent uses the default API key: tell the user, and change it with `mcp_config_write` only if they ask. Never write `write.lock` unless the user asks: these tools cannot remove it.
 7. Ask the user before changing a pin's type or removing it with `mcp_gpio_config`, and before calls that change the whole agent: `mcp_config_load`, `mcp_config_write`, `mcp_agent_restart` with `reboot=true`, and `mcp_agent_upgrade`.
 8. When an agent call fails, read `mcp_agent_logs`.
-9. If every call fails, show the user the message. "no ctrlpi-mcp" or "Cannot reach": the server on the Pi is not running. "MCP is switched off": it runs without HTTP MCP. "is already claimed": another computer claimed it; copy its key into `~/.ctrlpi/remote-config.json`. "rejected the key": the key saved there no longer works; update it.
+9. If a call fails or the tools are missing, call `remote_servers_list` and show the user the reason. "does not answer", "no ctrlpi-mcp found" or "Cannot reach": ctrlpi-mcp on the Pi is not running. "MCP is switched off": it runs without HTTP MCP. "is already claimed": another computer claimed it; copy its key into `~/.ctrlpi/remote-config.json`. "rejected the key": the key saved there no longer works; update it. "turned off": `targets` in that file leaves it out. After the user starts a server, call `remote_rescan`.
